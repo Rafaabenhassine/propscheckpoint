@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App {  
+  font-family: system-ui;  
+  background:var(--bg-color);
+  margin:0;
   color: white;
+  text-align: center;
+  font-size: 1.25rem;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;  background:url('https://media.istockphoto.com/id/462674629/photo/baseball-field.jpg?s=612x612&w=0&k=20&c=maBkXPhLes_h_cNCqDAsNx-lY2G6F_DbTGzjL7ESCYo='), seagreen;
+  background-size: cover;
+} 
+
+:root {
+  --bg-color: #111;
+  --white: rgba(255,255,255,.1);
 }
 
-.App-link {
-  color: #61dafb;
+table {
+  max-width: 350px;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0,0,0,.6);
+  border-radius: 0.5rem;
+  backdrop-filter: blur(4px);
+  box-shadow: 0px 15px 30px rgba(0,0,0,.75);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+td:nth-child(1) {
+  width: 35%;
 }
+td:nth-child(2) {
+  width: 30%;
+}
+td:nth-child(3) {
+  width: 35%;
+}
+
+.stat_box {
+  height: 100%;
+}
+
+div div {
+  width: 100%;
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+  padding: 0.25rem;
+  box-sizing: border-box;
+}
+
+div div:first-child {
+  border-top: 0;
+}
+div div:last-child {
+  border-bottom: 0;
+}
+
+.better {
+  background: OliveDrab;
+/*   color: black; */
+  font-weight: 900;
+}
+
+select {
+  width: calc(100% - 1rem);
+  margin: 0.5rem 0 1.5rem 0;
+  background: rgba(255,255,255,.05);
+  color: white;
+  text-align: center;  
+  border-radius: 4px;
+  padding: .5rem .25rem;
+  font-size: 1.25rem;
+  border: 0;
+}
+
+/* td {
+} */
+
+/* option  {
+  background: #333;
+} */
+
+/* img {
+  max-height: 80px;
+} */
+
+/* body {
+  font-family: system-ui;  
+  background:var(--bg-color);
+  margin:0;
+  color: white;
+  text-align: center;
+  font-size: 1.25rem;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;  background:url('https://media.istockphoto.com/id/462674629/photo/baseball-field.jpg?s=612x612&w=0&k=20&c=maBkXPhLes_h_cNCqDAsNx-lY2G6F_DbTGzjL7ESCYo='), seagreen;
+  background-size: cover;
+} */
+
+/* text-align: center;
+display: "inline-flex";
+justify-content: space-around;
+display: "flex";
+flex-wrap: "wrap";
+justify-content: "space-around"; */
